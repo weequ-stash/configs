@@ -1,0 +1,39 @@
+---
+Language: Cpp
+BasedOnStyle: LLVM
+
+# --- BRACES AND SYNTAX ---
+InsertBraces: false
+
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterControlStatement: Never
+  BeforeElse: true
+  BeforeCatch: true
+
+SpaceBeforeParens: Never
+AllowShortIfStatementsOnASingleLine: AllIfsAndElse
+AllowShortLoopsOnASingleLine: true
+AllowShortBlocksOnASingleLine: Always
+ColumnLimit: 0
+SortIncludes: false
+
+# --- INDENTATION ---
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+IndentCaseLabels: false
+AccessModifierOffset: -4
+
+# --- AESTETICS ---
+MaxEmptyLinesToKeep: 1
+KeepEmptyLinesAtTheStartOfBlocks: false
+PointerAlignment: Left
+
+# --- QUICK DATA STRUCTURES ---
+SpacesInAngles: false
+SpaceBeforeRangeBasedForLoopColon: true
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeSpacesInSquareBrackets: false
+SpaceInEmptyParentheses: false
+Cpp11BracedListStyle: true

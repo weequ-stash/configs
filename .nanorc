@@ -1,0 +1,120 @@
+include "/usr/share/nano/*.nanorc"
+
+set softwrap
+set autoindent
+set tabstospaces
+# set jumpyscrolling
+set newbuffer
+set multibuffer
+set indicator
+set smarthome
+set regexp
+set afterends
+set linenumbers
+set tabsize 4
+set wordchars "_"
+set zap
+set atblanks
+set nonewlines
+
+set titlecolor bold,white,slate
+set promptcolor ,slate
+set errorcolor bold,white,red
+set spotlightcolor black,lightyellow
+set statuscolor bold,white,green
+set selectedcolor lightwhite,slate
+set scrollercolor slate,normal
+set numbercolor cyan
+set keycolor cyan
+set functioncolor green
+
+#####  Keybindings Cheatsheet  #####
+## ^-Q   quit
+## M-U   undo
+## M-R   redo
+## ^-C   copy
+## ^-V   paste
+## ^-X   cut
+## ^-K   delete line
+## ^-Bsp delete until word start (or M-Bsp)
+## ^-Del delete until next word
+## ^-S   save file
+## M-/   comment/uncomment
+## M-:   record macro
+## M-;   play macro
+## ^-Space autocomplete word
+## ^-T     terminal (eg. "|xxd")
+
+## M-C   show cursor position
+## ^-L   refresh and center at cursor
+## ^-W   search forwards (= M-W with prompt)
+## ^-E   search backwards (= M-E with prompt)
+## ^-R   replace
+## ^_    goto line number
+## ^-Up  goto previous block
+## ^-Dwn goto next block
+## M-]   goto matching bracket
+## ^-G   goto head of file (vim-like)
+## M-G   goto end of file
+## M-Up  scroll screen up
+## M-Dwn scroll screen down
+## M-Left  switch to previous file
+## M-Rght  switch to next file
+## M-Ins   insert anchor
+## M-PgDwn goto next anchor
+
+###
+
+## cleanup
+
+unbind M-J                main
+unbind ^J                 main
+unbind ^V                 main
+unbind ^Y                 main
+unbind ^X                 main
+unbind ^U                 main
+unbind M-B                all
+unbind M-F                all
+unbind M-Space            all
+unbind M-\                all
+unbind M-T                main
+unbind M-H                all
+unbind M-I                all
+unbind M-K                all
+unbind M-L                all
+unbind M-O                all
+unbind M-M                all
+unbind M-S                all
+unbind M-Z                all
+unbind M-Q                all
+
+## binds
+
+bind ^Q   exit          all
+bind ^Z   undo          main
+bind M-R  redo          main
+bind M-C  copy          main
+bind M-V  paste         main
+bind M-X  cut           main
+bind ^K   zap           main
+bind ^H   chopwordleft  all
+bind M-/  comment       main
+bind ^Space complete    main
+
+bind ^C   location      main
+bind ^E   wherewas      all
+bind M-E  findprevious  all
+bind ^R   replace       main
+bind ^/   gotoline      main
+bind ^G   firstline     all
+bind M-G  lastline      all
+bind ^B   pageup        all  # vim-like
+bind ^F   pagedown      all  # vim-like
+
+bind M-1    help          all
+bind M-1    exit          help
+bind Sh-M-C constantshow  main
+bind Sh-M-F formatter     main
+bind Sh-M-B linter        main
+
+###
