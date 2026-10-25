@@ -17,16 +17,16 @@ set zap
 set atblanks
 set nonewlines
 
-set titlecolor bold,white,slate
-set promptcolor ,slate
+set titlecolor bold,white,orange #slate
+set promptcolor ,orange #slate
 set errorcolor bold,white,red
 set spotlightcolor black,lightyellow
-set statuscolor bold,white,green
-set selectedcolor lightwhite,slate
-set scrollercolor slate,normal
-set numbercolor cyan
-set keycolor cyan
-set functioncolor green
+set statuscolor bold,white,orange #green
+set selectedcolor lightwhite,orange #slate
+set scrollercolor orange
+set numbercolor orange #cyan
+set keycolor orange #cyan
+set functioncolor orange #green
 
 ## cleanup
 
