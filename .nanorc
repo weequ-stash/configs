@@ -55,6 +55,7 @@ unbind ^H main
 unbind ^K main
 ## binds
 
+bind M-Q     suspend       all
 bind ^Q      exit          all
 bind ^Z      undo          main
 bind M-R     redo          main
