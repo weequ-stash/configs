@@ -69,8 +69,8 @@ bind M-/     comment       main
 bind ^Space  complete      main
 bind M-Left  home          main
 bind M-Right end           main
-bind M-Up   "{end}{enter}{up}{copy}{paste}{delete}{up}{up}"         main
-bind M-Down "{end}{enter}{up}{copy}{paste}{delete}{up}"             main
+bind M-Up   "{end}{enter}{up}{copy}{paste}{zap}{up}{up}{end}"         main
+bind M-Down "{end}{enter}{up}{copy}{paste}{zap}{up}{end}"             main
 
 bind ^C   location      main
 bind ^E   wherewas      all
